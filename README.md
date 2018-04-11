@@ -16,6 +16,38 @@ NODE_ENV=production npm start
 ```
 
 
+## Setting up local development environment
+
+### 一、Install Node.js （6.x version）
+
+##### Windows install Node.js 6.x LTS
+1. https://nodejs.org/en/   download and install latest 6.x LTS version
+
+2. set `%USERPROFILE%\.npmrc`:
+    ```bash
+    registry=https://registry.npm.taobao.org # Required，TaoBao accelerate mirror
+    ```
+
+3. Set Environment Variable
+    ```bash
+    NODE_HOME=D:\software\nodejs # nodejs install directory
+    PATH=%PATH%;%NODE_HOME%;
+    ```
+
+4. update npm to the latest version:`npm install npm@latest -g`
+
+##### Ubuntu install Node.js
+1. install command node 6.x LTS
+    ```
+    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E Bash -
+    ```
+
+2. set `~\.npmrc`:
+    ```
+    registry=http://registry.cnpmjs.org # Required，TaoBao accelerate mirror
+    ```
+3. update npm to the latest version:`npm install npm@latest -g`
+
 ---
 # reference
 
