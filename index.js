@@ -2,9 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import App from './modules/App'
-import About from './modules/router/About'
-import Repos from './modules/router/Repos'
-import Repo from './modules/router/Repo'
+import About from './modules/router/about/About'
+import Repos from './modules/router/repo/Repos'
+import Repo from './modules/router/repo/Repo'
 import Home from './modules/router/Home'
 
 render((
