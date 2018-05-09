@@ -6,6 +6,7 @@ import About from './modules/router/about/About'
 import Repos from './modules/router/repo/Repos'
 import Repo from './modules/router/repo/Repo'
 import Home from './modules/router/Home'
+import Tutorial from './modules/router/tutorial/index'
 
 render((
   <Router history={browserHistory}>
@@ -15,6 +16,7 @@ render((
         <Route path="/router/repos/:userName/:repoName" component={Repo}/>
       </Route>
       <Route path="/router/about" component={About}/>
+      <Route path="/router/tutorial" component={Tutorial}/>
     </Route>
   </Router>
-), document.getElementById('app'))
+), document.getElementById('app'));
