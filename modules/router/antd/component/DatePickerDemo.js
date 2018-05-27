@@ -17,7 +17,7 @@ class DatePickerDemoo extends React.Component {
 
     render() {
         return (
-            <div style={{width: 400, height: 200, margin: '100px auto'}}>
+            <div style={{width: 400, height: 40, margin: '50'}}>
                 <DatePicker onChange={value => this.handleChange(value)}/>
                 <div>
                     <p>Date: {this.state.date}</p>
