@@ -7,6 +7,7 @@ import Repos from './modules/router/repo/Repos'
 import Repo from './modules/router/repo/Repo'
 import Home from './modules/router/Home'
 import Tutorial from './modules/router/tutorial/index'
+import FormDemo from './modules/router/form/index'
 
 render((
   <Router history={browserHistory}>
@@ -17,6 +18,7 @@ render((
       </Route>
       <Route path="/router/about" component={About}/>
       <Route path="/router/tutorial" component={Tutorial}/>
+      <Route path="/router/form" component={FormDemo}/>
     </Route>
   </Router>
 ), document.getElementById('app'));
