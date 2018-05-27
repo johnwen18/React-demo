@@ -1,29 +1,29 @@
-import React from "react";
-import DatePicker from 'antd/lib/date-picker';
+import React from 'react';
+import {DatePicker, message} from 'antd';
 
-
-class DatePickerDemo extends React.Component {
+class DatePickerDemoo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            date: '',
-        };
+            date: ""
+        }
     }
 
     handleChange(date) {
+        message.info("您选择的日期是" + date.toString());
         console.log('Selected Date: ' + (date ? date.toString() : ''));
-        this.setState({date});
+        this.setState({date: date.toString()})
     }
 
     render() {
-        let styleObj = {width: 400, margin: '100 auto'};
         return (
-            <div style={styleObj}>
+            <div style={{width: 400, height: 200, margin: '100px auto'}}>
                 <DatePicker onChange={value => this.handleChange(value)}/>
-                <div style={{marginTop: 20}}>Date: {this.state.date && this.state.date.toString()}</div>
+                <div>
+                    <p>Date: {this.state.date}</p>
+                </div>
             </div>
         );
     }
 }
-
-export default DatePickerDemo;
+export default DatePickerDemoo;
