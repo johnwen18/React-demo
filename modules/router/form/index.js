@@ -1,5 +1,5 @@
 import React from "react";
-import FormDemo from "./compent/FormDemo";
+import FormDemo from "./component/FormDemo";
 
 class Index extends React.Component{
     render(){
