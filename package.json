@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "antd": "^3.5.4",
+    "antd": "^1.11.1",
     "babel-plugin-import": "^1.7.0",
     "compression": "^1.6.1",
     "express": "^4.13.4",
